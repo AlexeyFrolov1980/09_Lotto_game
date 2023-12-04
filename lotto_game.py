@@ -101,6 +101,17 @@ class lotto_player:
 
         return val
 
+    #Перегрузим оператор ==
+    def __eq__(self, other):
+        if (self.card==other.card) and (self.player_name==other.player_name):
+            return True
+
+        else:
+            return False
+
+
+    def __ne__(self, other):
+        return not self.__eq__(other)
 
 
     #добавим бочку в список у игрока

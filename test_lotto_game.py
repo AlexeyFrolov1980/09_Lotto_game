@@ -50,3 +50,16 @@ class Test_lotto_game(unittest.TestCase):
                 self.assertFalse(self.player.in_card(num_in_card))
             else:
                 self.assertTrue(self.player.in_card(num_in_card))
+
+    def test_eq__(self):
+        self.assertTrue(self.player == self.player)
+        player1 = lotto_game.lotto_player("Тестовый игрок", lotto_game.player_type.man)
+        self.assertFalse(self.player == player1)
+
+
+    def test_ne__(self):
+        self.assertFalse(self.player != self.player)
+        player1 = lotto_game.lotto_player("Тестовый игрок", lotto_game.player_type.man)
+        self.assertTrue(self.player != player1)
+
+
