@@ -1,4 +1,6 @@
 [
   "test_lotto_game.py::Test_lotto_game::test_add_barrel",
-  "test_lotto_game.py::Test_lotto_game::test_in_card"
+  "test_lotto_game.py::Test_lotto_game::test_eq__",
+  "test_lotto_game.py::Test_lotto_game::test_in_card",
+  "test_lotto_game.py::Test_lotto_game::test_ne__"
 ]
